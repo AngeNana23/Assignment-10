@@ -3,14 +3,14 @@ Assignment 10 AI course
 
 # Amazon Alexa Sentiment Analysis
 
-## 📌 Project Overview
+## Project Overview
 This project focuses on performing sentiment analysis on Amazon Alexa customer reviews. The goal is to classify reviews as either **positive or negative** using machine learning techniques.
 
 The dataset contains customer feedback, product variation, ratings, and textual reviews. We use Natural Language Processing (NLP) and a **Random Forest Classifier** to build the model.
 
 ---
 
-## 🎯 Objective
+## Objective
 To build a machine learning model that can:
 - Analyze customer reviews
 - Convert text data into numerical format
@@ -19,7 +19,7 @@ To build a machine learning model that can:
 
 ---
 
-## 📊 Dataset Description
+## Dataset Description
 The dataset includes:
 - `verified_reviews` → Customer review text
 - `rating` → Product rating
@@ -30,8 +30,8 @@ Source: Amazon Alexa product review dataset (Kaggle / public dataset)
 
 ---
 
-## ⚙️ Technologies Used
-- Python 🐍
+## Technologies Used
+- Python 
 - Pandas
 - NumPy
 - Matplotlib
@@ -40,7 +40,7 @@ Source: Amazon Alexa product review dataset (Kaggle / public dataset)
 
 ---
 
-## 🔄 Workflow
+## Workflow
 
 ### 1. Data Preprocessing
 - Handled missing values
