@@ -1,42 +1,47 @@
 # Assignment-10
 Assignment 10 AI course 
 
-# Amazon Alexa Sentiment Analysis
-
-## Project Overview
-This project focuses on performing sentiment analysis on Amazon Alexa customer reviews. The goal is to classify reviews as either **positive or negative** using machine learning techniques.
-
-The dataset contains customer feedback, product variation, ratings, and textual reviews. We use Natural Language Processing (NLP) and a **Random Forest Classifier** to build the model.
-
----
-
-## Objective
-To build a machine learning model that can:
-- Analyze customer reviews
-- Convert text data into numerical format
-- Predict sentiment (Positive or Negative)
-- Evaluate model performance using classification metrics
-
----
-
-## Dataset Description
-The dataset includes:
-- `verified_reviews` → Customer review text
-- `rating` → Product rating
-- `variation` → Product type
-- `feedback` → Target variable (1 = Positive, 0 = Negative)
-
-Source: Amazon Alexa product review dataset (Kaggle / public dataset)
-
----
-
-## Technologies Used
-- Python 
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
+Amazon Alexa Sentiment Analysis
+Project Overview
+This project performs sentiment analysis on Amazon Alexa customer reviews using machine learning. The objective is to classify reviews as positive or negative based on their textual content.
+A Random Forest Classifier is used as the main model, with Logistic Regression included for comparison. Text data is converted into numerical form using Count Vectorization.
+Dataset
+File: amazon_alexa.tsv
+Features include:
+verified_reviews (text data)
+variation (product type)
+feedback (target variable)
+Target Labels:
+1 → Positive review
+0 → Negative review
+Technologies Used
+Python
+Google Colab
+Pandas, NumPy
+Matplotlib, Seaborn
+Scikit-learn
+Methodology
+Data Preprocessing
+Removed unnecessary columns (date, rating)
+Handled missing values
+One-hot encoded the variation column
+Converted text into numerical features using CountVectorizer
+Model Training
+Split dataset into 80% training and 20% testing
+Trained:
+Random Forest Classifier
+Logistic Regression (baseline model)
+Evaluation
+Confusion Matrix
+Classification Report (Precision, Recall, F1-score)
+ROC Curve and AUC score
+Results
+Accuracy: approximately 93%
+AUC Score: approximately 0.91
+Key Findings:
+Strong performance on positive reviews
+Lower performance on negative reviews due to class imbalance
+Important features include words such as “not”, “back”, “stopped”, and “terrible”
 
 ---
 
