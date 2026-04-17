@@ -45,27 +45,7 @@ Important features include words such as “not”, “back”, “stopped”, a
 
 ---
 
-## Workflow
 
-### 1. Data Preprocessing
-- Handled missing values
-- Dropped irrelevant columns (`date`, `rating`)
-- One-hot encoded categorical variables (`variation`)
-
-### 2. Feature Engineering
-- Applied **CountVectorizer** to convert text into numerical features
-- Combined text features with structured data
-
-### 3. Model Building
-- Random Forest Classifier (100 estimators)
-- Train-test split (80/20)
-
-### 4. Model Evaluation
-- Confusion Matrix
-- Classification Report
-- Accuracy Score
-
----
 
 ## Model Performance
 The model was evaluated using:
